@@ -1,0 +1,11 @@
+Jinja2>=3.0
+click>=8.0
+itsdangerous>=2.0
+Werkzeug>=2.2.2
+colorama
+MarkupSafe>=2.0
+flask>=2.2.2
+mock==5.0.1
+projects==1.0.9
+urwid==2.1.2
+
