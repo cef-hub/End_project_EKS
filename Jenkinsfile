@@ -20,9 +20,7 @@ pipeline {
             steps {
                 dir('/var/jenkins_home/End_project_EKS') {
                 script {
-                    {
                         sh 'terraform init'
-                    }
                 }
             }
             }
@@ -32,9 +30,7 @@ pipeline {
             steps {
                 dir('/var/jenkins_home/End_project_EKS') {
                 script {
-                     {
                         sh 'terraform apply -var-file=dev.tfvars'
-                    }
                 }
             }
             }
