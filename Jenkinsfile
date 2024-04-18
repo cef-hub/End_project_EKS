@@ -4,17 +4,19 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+			dir('/var/jenkins_home/End_project_EKS') {
                 git branch: 'main', url: 'https://github.com/cef-hub/End_project_EKS.git'
             }
+			}
         }
 		
-        stage('Clone Repository') {
-            steps {
-                dir('/var/jenkins_home/End_project_EKS') {
-                    git 'https://github.com/cef-hub/End_project_EKS.git'
-                }
-            }
-        }
+#        stage('Clone Repository') {
+#            steps {
+#                dir('/var/jenkins_home/End_project_EKS') {
+#                    git 'https://github.com/cef-hub/End_project_EKS.git'
+#                }
+#            }
+#        }
 		
         stage('Terraform Init') {
             steps {
