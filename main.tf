@@ -279,7 +279,7 @@ resource "aws_instance" "skruhlik-terraform-ec2" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "skruhlik-terraform-ec2"
+    Name = "skruhlik-terraform-ec2-rename"
   }
 }
 
