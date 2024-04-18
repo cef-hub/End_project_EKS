@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-			dir('/var/jenkins_home/End_project_EKS') {
+			dir('/home/ec2-user/End_project_EKS') {
                 git branch: 'main', url: 'https://github.com/cef-hub/End_project_EKS.git'
             }
 			}
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Terraform Init') {
             steps {
-                dir('/var/jenkins_home/End_project_EKS') {
+                dir('/home/ec2-user/End_project_EKS') {
                 script {
                         sh 'terraform init'
                 }
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Terraform Apply') {
             steps {
-                dir('/var/jenkins_home/End_project_EKS') {
+                dir('/home/ec2-user/End_project_EKS') {
                 script {
                         sh 'terraform apply -var-file=dev.tfvars'
                 }
