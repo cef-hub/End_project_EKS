@@ -5,6 +5,7 @@ pipeline {
         AWS_DEFAULT_REGION = 'us-east-1' 
         AWS_ACCOUNT_ID = '097084951758' 
         ECR_REPOSITORY_NAME = 'skruhlik-ecr-repository'
+		PATH = '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/ec2-user/.local/bin/kubectl'		
     }
 	
     stages {
