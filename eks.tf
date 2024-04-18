@@ -8,6 +8,7 @@ locals {
 }
 
 module "eks" {
+  count   = var.necessity_eks == "yes" ? 1 : 0
   source  = "terraform-aws-modules/eks/aws"
   version = "19.15.3"
 

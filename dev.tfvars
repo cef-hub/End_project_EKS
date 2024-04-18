@@ -7,5 +7,4 @@ cidr_block_pr2 = "10.0.20.0/24"
 cidr_block_pb1 = "10.0.11.0/24"
 cidr_block_pb2 = "10.0.21.0/24"
 instance_type = "t2.small"
-necessity_eks = "no"
-##
+necessity_eks = "yes"
