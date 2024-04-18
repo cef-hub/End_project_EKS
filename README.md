@@ -466,39 +466,27 @@ spec:
 
 ##  Создали и настроили Webhooks в GitHub
 
-```
 
 ![Webhoks](https://github.com/cef-hub/End_project_EKS/blob/main/image/Webhook1.png?raw=true)
 
 ![Webhoks2](https://github.com/cef-hub/End_project_EKS/blob/main/image/Webhook2.png?raw=true)
 
-```
 
 ##  Создали и настроили Jenkins на отдельно выденной ноде AWS EC2
 
-```
 
 ![Jenkins](https://github.com/cef-hub/End_project_EKS/blob/main/image/Jenkins0.png?raw=true)
 
 ![Jenkins2 собрали с 16-го раза](https://github.com/cef-hub/End_project_EKS/blob/main/image/Jenkins.png?raw=true)
 
-```
 
 ##  Подключились в приложении Lens  к кластеру EKS AWS
 
-```
 
 ![Lens](https://github.com/cef-hub/End_project_EKS/blob/main/image/Lens.png?raw=true)
 
-
-```
-
-
 ##  Вызвали API-сервиса задеплоенного в нашем кластере из образа скачанного с ECR репозитория AWS
 
-```
 
 ![Postman](https://github.com/cef-hub/End_project_EKS/blob/main/image/Postman.png?raw=true)
 
-
-```
