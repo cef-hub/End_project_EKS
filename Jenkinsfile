@@ -10,7 +10,7 @@ pipeline {
 		
         stage('Clone Repository') {
             steps {
-                dir('/var/jenkins_home/') {
+                dir('/var/jenkins_home/End_project_EKS') {
                     git 'https://github.com/cef-hub/End_project_EKS.git'
                 }
             }
