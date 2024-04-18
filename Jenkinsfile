@@ -45,6 +45,7 @@ pipeline {
 					withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: '37957038-ae46-4a37-9761-2f0aba65316a']]) {
 						sh 'aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com'
 						sh 'docker pull $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest'
+						sh 'aws eks update-kubeconfig --name skruhlik-eks-cluster'
 						sh 'kubectl apply -f deployment-skruhlik-app.yml'
 					}
 
